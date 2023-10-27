@@ -33,7 +33,8 @@
     justify-content: center;
 
     /* 
-     Posiciona o primeiro elemento no começo, o último elemento no fim e os demais no espaço restante no meio.
+     Posiciona o primeiro elemento no começo, o último elemento no fim e os
+     demais no espaço restante no meio.
     */
     /* justify-content: space-between; */
 
@@ -58,7 +59,8 @@
     /* align-items: baseline; */
 
     /* 
-     Permite ou não a quebra de linha caso o último elemento ultrapasse o final do eixo principal. 
+     Permite ou não a quebra de linha caso o último elemento ultrapasse o final
+     do eixo principal. 
     */
     flex-wrap: wrap;
 
@@ -66,7 +68,8 @@
     /* flex-flow: row wrap; */
 
     /* 
-     Para quando existe o `flex-wrap` e queremos alinhar as linhas no nosso eixo secundário. 
+     Para quando existe o `flex-wrap` e queremos alinhar as linhas no nosso 
+     eixo secundário. 
     */
     /* align-content: flex-start; */
     /* align-content: flex-end; */

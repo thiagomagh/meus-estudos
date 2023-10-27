@@ -1,0 +1,72 @@
+.container {
+    /* Necessário para o `flex-shrink` funcionar */
+    flex-wrap: nowrap;
+
+    /* Usado no exemplo para `flex-shrink`.*/
+    /* width: 400px; */
+}
+
+.bloco-1 {
+    /* Determina em qual ordem cada elemento está posicionado no eixo principal. */
+    order: 0;
+
+    /* 
+     Permite ou não o elemento crescer caso necessário. O valor da propriedade é 
+     definido pela proporção do item, ou seja, o que ele irá crescer a partir da 
+     largura pré-definida. 
+    */
+    /*
+     Ex.: O item possui 150px de largura, quando definimos o valor `2` na 
+     propriedade, iremos duplicar a proporção em relação a largura dele (150px).
+
+     Valor `1`: 303px - 150px = 153px
+     Valor `2`: 456px - 150px = 306px, dobro de 153px
+    */
+    flex-grow: 0;
+
+    /* Permite ou não o item encolher caso necessário. */
+    flex-shrink: 1;
+
+    /* Define largura e altura dos itens.  */
+    /* É possível determinar tamanho fixos. */
+    /* flex-basis: 50px; */
+
+    /* 
+     Aumenta o tamanho do elemento levando em conta a largura e altura pré-definidas,
+     desconsiderando o `flex-grow`. 
+    */
+    /* flex-basis: 0; */
+
+    /* 
+     Aumenta o tamanho do elemento levando em conta o `flex-grow`, considerando a 
+     proporcionalidade. 
+    */
+    flex-basis: auto;
+
+    /* Atalho para flex-grow, flex-shrink e flex-basis. */
+    flex: 0 1 auto;
+
+    /* 
+     Alinha um elemento específico ao longo do eixo secundário, ignorando a 
+     propriedade `align-items`. 
+    */
+    align-self: flex-start;
+}
+
+.bloco-2 {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex: 0 1 auto;
+    align-self: flex-end;
+}
+
+.bloco-3 {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex: 0 1 auto;
+    align-self: center;
+}
