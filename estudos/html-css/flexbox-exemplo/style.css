@@ -1,0 +1,88 @@
+/* 
+ Flexbox serve para alinharmos de forma unidimensional elementos dentro
+ de uma caixa (container). Unidimensional, pois organizamos os elementos
+ como linhas ou como colunas.
+
+ O elemento pai é o container, já os elementos filhos são os itens dentro
+ desse container. 
+*/
+
+* {
+    margin: 0;
+}
+
+.container {
+    /* 
+     Define o elemento pai como flex container. O eixo horizontal é o
+     principal e o eixo vertical é o secundário.
+    */
+    display: flex;
+
+    /* Define o eixo principal do layout (linha ou coluna) e seu sentindo. */
+    /* `row` é o valor padrão.  */
+    flex-direction: row;
+
+    /* Alinha os elementos ao longo do eixo principal. */
+    /* Alinha os elementos no início do eixo principal. */
+    /* justify-content: flex-start; */
+
+    /* Alinha os elementos no fim do eixo principal. */
+    /* justify-content: flex-end; */
+
+    /* Alinha os elementos no centro do eixo principal. */
+    justify-content: center;
+
+    /* 
+     Posiciona o primeiro elemento no começo, o último elemento no fim e os demais no espaço restante no meio.
+    */
+    /* justify-content: space-between; */
+
+    /* 
+     Redistribui o espaço igualmente tanto no começo quanto no fim de cada elemento 
+    */
+    /* justify-content: space-around; */
+
+    /* Alinha os elementos ao longo do eixo secundário. */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    align-items: center;
+
+    /* 
+     Os elementos ocupam todo o espaço no eixo secundário, podendo serem limitados
+     conforme às alturas pré-definidas para cada um. 
+    */
+    /* align-items: stretch; */
+
+    /* Alinha todos os elementos na base do conteúdo de cada uma. */
+    /* align-items: baseline; */
+
+    /* 
+     Permite ou não a quebra de linha caso o último elemento ultrapasse o final do eixo principal. 
+    */
+    flex-wrap: wrap;
+
+    /* Atalho para flex-direction e flex-wrap. */
+    /* flex-flow: row wrap; */
+
+    /* 
+     Para quando existe o `flex-wrap` e queremos alinhar as linhas no nosso eixo secundário. 
+    */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    align-content: center;
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+
+    /* Determina o tamanho do espaço entre os elementos em todos os lados. */
+    /* gap: 70px; */
+
+    /* Atalho para determinar o tamanho do espaço entre as linhas e as colunas. */
+    /* gap: 10px 30px; */
+
+    /* Determina o espaço entre as linhas. */
+    row-gap: 10px;
+
+    /* Determina o espaço entre as colunas. */
+    column-gap: 30px;
+}
